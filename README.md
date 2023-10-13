@@ -12,19 +12,34 @@ La clase Maestro tiene varios atributos privados, un constructor para inicializa
 La clase Calificación tiene cuatro atributos privados para representar la materia, la asistencia, el cumplimiento del uniforme y la calificación numérica. Un constructor permite inicializar estos atributos y métodos públicos permiten obtener los valores de estos atributos. Esta clase se utiliza para representar las calificaciones de un estudiante en una materia específica.
 La clase colegio crea objetos de diferentes clases relacionadas con un colegio (sedes, alumnos, calificaciones y maestros) y luego imprime información sobre estos objetos en la consola.
 
-# Diagramas UML
+# Diagramas UML/n
 
 La clase Colegio es la clase principal con un método main.
 Las clases Alumno, Maestro y Calificación se representan como clases independientes.
 La clase Alumno tiene una relación de composición con la clase Sede, lo que significa que un Alumno tiene una Sede. Además, tiene atributos como nivel, grado y grupo.
 La clase Maestro tiene una relación de composición con la clase Sede, una relación de composición con la clase Alumno (para representar la lista de alumnos que tiene a cargo) y atributos como nombre, gruposAsignados y asignatura.
 La clase Calificación tiene atributos como materia, asistencia, cumplimientoUniforme y calificación.
-
+/n
+/n
 ![Imagen proyecto](https://github.com/AGN-Teaching/proyecto-equipo-5/assets/141947952/b2a87387-6be4-441e-991d-2cb5ad778e6c)
 
-Diagrama UML de la clase Alumno.
+# Diagrama UML de la clase Alumno.
+/n
 Los atributos privados sede, nivel, grado y grupo se representan en la sección superior del rectángulo con un signo menos (-) delante de ellos, lo que indica que son atributos privados.
 El constructor Alumno se representa con el símbolo +, que indica que es un constructor público.
 Los métodos públicos getSede(), getNivel(), getGrado(), y getGrupo() se representan también con el símbolo +, indicando que son públicos.
+/n
+/n
 ![image](https://github.com/AGN-Teaching/proyecto-equipo-5/assets/141947952/bc343782-8450-4a5c-9e48-3a78eda1cdee)
+
+# Diagrama UML de la clase Maestro.
+/n
+Los atributos privados nombre, sedes, gruposAsignados, asignatura y alumnosPorGrupo se representan en la sección superior del rectángulo con un signo menos (-) delante de ellos, lo que indica que son atributos privados.
+El constructor Maestro se representa con el símbolo +, que indica que es un constructor público.
+Los métodos públicos getNombre(), getSedes(), getGruposAsignados(), getAsignatura() y getAlumnosPorGrupo() se representan también con el símbolo +, indicando que son públicos.
+/n
+/n
+![image](https://github.com/AGN-Teaching/proyecto-equipo-5/assets/141947952/d66aad2e-b92f-46b5-ba53-c4d46d74fc4d)
+/n/n
+
 
