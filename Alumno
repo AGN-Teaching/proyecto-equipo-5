@@ -1,0 +1,30 @@
+
+public class Alumno {//Esta línea declara una clase pública llamada Alumno. La palabra clave public significa que esta clase es accesible desde cualquier otro lugar en el programa.
+    private Sede sede;// Esta línea declara un atributo privado llamado sede que es de tipo Sede. El atributo sede se utiliza para representar la sede a la que pertenece el alumno. El modificador private significa que el atributo solo es accesible dentro de la propia clase Alumno.
+    private String nivel;//Esta línea declara un atributo privado llamado nivel que es de tipo String. El atributo nivel se utiliza para representar el nivel educativo al que pertenece el alumno.
+    private int grado;//Esta línea declara un atributo privado llamado grado que es de tipo int. El atributo grado se utiliza para representar el grado en el que se encuentra el alumno.
+    private char grupo;//Esta línea declara un atributo privado llamado grupo que es de tipo char. El atributo grupo se utiliza para representar el grupo al que pertenece el alumno.
+
+    public Alumno(Sede sede, String nivel, int grado, char grupo) {//Esta línea define un constructor público para la clase Alumno. El constructor toma cuatro argumentos: sede, nivel, grado y grupo. Cuando se crea una nueva instancia de Alumno, este constructor se utiliza para inicializar los atributos de la instancia con los valores proporcionados.
+        this.sede = sede;//Dentro del constructor, esta línea asigna el valor del parámetro sede al atributo sede de la instancia actual de la clase. El uso de this se refiere a la instancia actual.
+        this.nivel = nivel;//Similar al caso anterior, esta línea asigna el valor del parámetro nivel al atributo nivel de la instancia actual.
+        this.grado = grado;//Esta línea asigna el valor del parámetro grado al atributo grado de la instancia actual.
+        this.grupo = grupo;//Esta línea asigna el valor del parámetro grupo al atributo grupo de la instancia actual.
+    }
+
+    public Sede getSede() {//Esta línea define un método público llamado getSede(). Este método permite obtener la sede a la que pertenece el alumno.
+        return sede;//Dentro del método getSede(), esta línea devuelve el valor del atributo sede de la instancia actual como resultado.
+    }
+
+    public String getNivel() {//Similar al caso anterior, esta línea define un método público llamado getNivel() que permite obtener el nivel educativo del alumno.
+        return nivel;//Dentro del método getNivel(), esta línea devuelve el valor del atributo nivel de la instancia actual como resultado.
+    }
+
+    public int getGrado() {// Esta línea define un método público llamado getGrado() que permite obtener el grado en el que se encuentra el alumno.
+        return grado;// Dentro del método getGrado(), esta línea devuelve el valor del atributo grado de la instancia actual como resultado.
+    }
+
+    public char getGrupo() {//Similar al caso anterior, esta línea define un método público llamado getGrupo() que permite obtener el grupo al que pertenece el alumno.
+        return grupo;//Dentro del método getGrupo(), esta línea devuelve el valor del atributo grupo de la instancia actual como resultado.
+    }
+}
