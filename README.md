@@ -46,7 +46,7 @@ Los métodos públicos getNombre(), getSedes(), getGruposAsignados(), getAsignat
 ![image](https://github.com/AGN-Teaching/proyecto-equipo-5/assets/141947952/d66aad2e-b92f-46b5-ba53-c4d46d74fc4d)
 
 
-#Diagrama UML de la clase Calificación.
+# Diagrama UML de la clase Calificación.
 
 
 Los atributos privados materia, asistencia, cumplimientoUniforme y calificación se representan en la sección superior del rectángulo con un signo menos (-) delante de ellos, lo que indica que son atributos privados.
@@ -66,5 +66,5 @@ El método público getNombre() se representa también con el símbolo +, indica
 ![image](https://github.com/AGN-Teaching/proyecto-equipo-5/assets/141947952/47757db5-51f8-40de-98bf-668bf83370f6)
 
 
-
+# Conclusiones 
 
