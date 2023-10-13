@@ -1,0 +1,11 @@
+public class Sede {//Esta línea declara una clase pública llamada Sede. La palabra clave public significa que esta clase es accesible desde cualquier otro lugar en el programa. La clase Sede es una clase de nivel superior y su nombre debe coincidir con el nombre del archivo en el que se encuentra.
+    private String nombre;//Esta línea declara un campo (atributo) privado llamado nombre que pertenece a la clase Sede. El atributo nombre es de tipo String y se utiliza para almacenar el nombre de la sede. El modificador private significa que el atributo solo es accesible dentro de la propia clase Sede.
+
+    public Sede(String nombre) {//Esta línea define un constructor público para la clase Sede. Un constructor es un método especial que se llama cuando se crea una instancia de la clase. Este constructor toma un argumento de tipo String llamado nombre. Cuando se crea una nueva instancia de Sede, este constructor se utiliza para inicializar el atributo nombre con el valor proporcionado como argumento.
+        this.nombre = nombre;//Dentro del constructor, esta línea asigna el valor del parámetro nombre al atributo nombre de la instancia actual de la clase. El uso de this se refiere a la instancia actual de la clase.
+    }
+
+    public String getNombre() {// Esta línea define un método público llamado getNombre(). Este método permite obtener el valor del atributo nombre de la instancia de la clase Sede.
+        return nombre;//Dentro del método getNombre(), esta línea devuelve el valor del atributo nombre de la instancia actual como resultado.
+    }
+}
