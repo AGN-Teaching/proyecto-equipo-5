@@ -1,0 +1,50 @@
+import java.util.ArrayList;
+import java.util.List;
+public class Colegio {
+    public static void main(String[] args) {
+        // Sedes
+        Sede sedePrimaria = new Sede("Primaria");//Crea una nueva instancia de la clase Sede llamada sedePrimaria con el nombre "Primaria".
+        Sede sedeSecundaria = new Sede("Secundaria");//Crea una nueva instancia de la clase Sede llamada sedeSecundaria con el nombre "Secundaria".
+        Sede sedePreescolar = new Sede("Preescolar");//Crea una nueva instancia de la clase Sede llamada sedePreescolar con el nombre "Preescolar".
+
+        // Alumnos
+        Alumno alumno1 = new Alumno(sedePrimaria, "Primaria", 5, 'A');//Crea una nueva instancia de la clase Alumno llamada alumno1 con la sede "Primaria", nivel "Primaria", grado 5 y grupo 'A'.
+        Alumno alumno2 = new Alumno(sedeSecundaria, "Secundaria", 9, 'B');//Crea una nueva instancia de la clase Alumno llamada alumno2 con la sede "Secundaria", nivel "Secundaria", grado 9 y grupo 'B'.
+        Alumno alumno3 = new Alumno(sedePreescolar, "Preescolar", 2, 'C');//Crea una nueva instancia de la clase Alumno llamada alumno3 con la sede "Preescolar", nivel "Preescolar", grado 2 y grupo 'C'.
+        Alumno alumno4 = new Alumno(sedePrimaria, "Primaria", 3, 'B');//Crea una nueva instancia de la clase Alumno llamada alumno4 con la sede "Primaria", nivel "Primaria", grado 3 y grupo 'B'.
+
+        // Calificaciones
+        Calificacion calif1 = new Calificacion("Matemáticas", 90, 100, 95);//Crea una nueva instancia de la clase Calificacion llamada calif1 con la materia "Matemáticas" y valores de asistencia, cumplimiento de uniforme y calificación específicos.
+        Calificacion calif2 = new Calificacion("Historia", 88, 92, 90);//Crea una nueva instancia de la clase Calificacion llamada calif2 con la materia "Historia" y valores de asistencia, cumplimiento de uniforme y calificación específicos
+        Calificacion calif3 = new Calificacion("Arte", 100, 100, 98);//Crea una nueva instancia de la clase Calificacion llamada calif3 con la materia "Arte" y valores de asistencia, cumplimiento de uniforme y calificación específicos.
+        Calificacion calif4 = new Calificacion("Inglés", 92, 96, 94);//Crea una nueva instancia de la clase Calificacion llamada calif4 con la materia "Inglés" y valores de asistencia, cumplimiento de uniforme y calificación específicos.
+
+        // Maestros
+        Maestro maestro1 = new Maestro("Profesor Juan", List.of(sedePrimaria, sedeSecundaria), List.of('A', 'B'), "Matemáticas", List.of(alumno1, alumno2));//Crea una nueva instancia de la clase Maestro llamada maestro1 con el nombre "Profesor Juan", una lista de sedes, grupos asignados, asignatura y una lista de alumnos por grupo.
+        Maestro maestro2 = new Maestro("Profesora Pedro", List.of(sedePreescolar), List.of('C'), "Arte", List.of(alumno3)); //Crea una nueva instancia de la clase Maestro llamada maestro2 con el nombre "Profesora Pedro", una lista de sedes, grupos asignados, asignatura y una lista de alumnos por grupo.
+        Maestro maestro3 = new Maestro("Profesor Rosario", List.of(sedePrimaria), List.of('B'), "Historia", List.of(alumno4));// Crea una nueva instancia de la clase Maestro llamada maestro3 con el nombre "Profesor Rosario", una lista de sedes, grupos asignados, asignatura y una lista de alumnos por grupo.
+///A partir de aquí, se imprimen varias líneas de texto para mostrar información sobre las sedes, alumnos, calificaciones y maestros utilizando los métodos de acceso de las respectivas clases (por ejemplo, getNombre(), getSede(), getNivel(), getGrado(), etc.).
+        // Imprimir información de los ejemplos
+        System.out.println(" sedes:");
+        System.out.println("Sede 1: " + sedePrimaria.getNombre());
+        System.out.println("Sede 2: " + sedeSecundaria.getNombre());
+        System.out.println("Sede 3: " + sedePreescolar.getNombre());
+
+        System.out.println("\n alumnos:");
+        System.out.println("Alumno 1: Sede " + alumno1.getSede().getNombre() + ", Nivel " + alumno1.getNivel() + ", Grado " + alumno1.getGrado() + ", Grupo " + alumno1.getGrupo());
+        System.out.println("Alumno 2: Sede " + alumno2.getSede().getNombre() + ", Nivel " + alumno2.getNivel() + ", Grado " + alumno2.getGrado() + ", Grupo " + alumno2.getGrupo());
+        System.out.println("Alumno 3: Sede " + alumno3.getSede().getNombre() + ", Nivel " + alumno3.getNivel() + ", Grado " + alumno3.getGrado() + ", Grupo " + alumno3.getGrupo());
+        System.out.println("Alumno 4: Sede " + alumno4.getSede().getNombre() + ", Nivel " + alumno4.getNivel() + ", Grado " + alumno4.getGrado() + ", Grupo " + alumno4.getGrupo());
+
+        System.out.println("\n calificaciones:");
+        System.out.println("Calificación 1: Materia " + calif1.getMateria() + ", Asistencia " + calif1.getAsistencia() + ", Cumplimiento de Uniforme " + calif1.getCumplimientoUniforme() + ", Calificación " + calif1.getCalificacion());
+        System.out.println("Calificación 2: Materia " + calif2.getMateria() + ", Asistencia " + calif2.getAsistencia() + ", Cumplimiento de Uniforme " + calif2.getCumplimientoUniforme() + ", Calificación " + calif2.getCalificacion());
+        System.out.println("Calificación 3: Materia " + calif3.getMateria() + ", Asistencia " + calif3.getAsistencia() + ", Cumplimiento de Uniforme " + calif3.getCumplimientoUniforme() + ", Calificación " + calif3.getCalificacion());
+        System.out.println("Calificación 4: Materia " + calif4.getMateria() + ", Asistencia " + calif4.getAsistencia() + ", Cumplimiento de Uniforme " + calif4.getCumplimientoUniforme() + ", Calificación " + calif4.getCalificacion());
+
+        System.out.println("\nmaestros:");
+        System.out.println("Maestro 1: Nombre " + maestro1.getNombre() + ", Sedes en las que da clases " + maestro1.getSedes() + ", Grupos Asignados " + maestro1.getGruposAsignados() + ", Asignatura Impartida " + maestro1.getAsignatura() + ", Alumnos por Grupo " + maestro1.getAlumnosPorGrupo());
+        System.out.println("Maestro 2: Nombre " + maestro2.getNombre() + ", Sedes en las que da clases " + maestro2.getSedes() + ", Grupos Asignados " + maestro2.getGruposAsignados() + ", Asignatura Impartida " + maestro2.getAsignatura() + ", Alumnos por Grupo " + maestro2.getAlumnosPorGrupo());
+        System.out.println("Maestro 3: Nombre " + maestro3.getNombre() + ", Sedes en las que da clases " + maestro3.getSedes() + ", Grupos Asignados " + maestro3.getGruposAsignados() + ", Asignatura Impartida " + maestro3.getAsignatura() + ", Alumnos por Grupo " + maestro3.getAlumnosPorGrupo());
+    }
+}
