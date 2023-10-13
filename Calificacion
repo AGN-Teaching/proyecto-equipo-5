@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+public class Calificacion {// Esta línea declara una clase pública llamada Calificacion. La palabra clave public significa que esta clase es accesible desde cualquier otro lugar en el programa.
+    private String materia;//Esta línea declara un atributo privado llamado materia que pertenece a la clase Calificacion. El atributo materia se utiliza para representar la materia a la que se refiere la calificación.
+    private double asistencia;//Esta línea declara un atributo privado llamado asistencia que es de tipo double. El atributo asistencia se utiliza para representar el porcentaje de asistencia relacionado con la calificación.
+    private double cumplimientoUniforme;//: Esta línea declara un atributo privado llamado cumplimientoUniforme que es de tipo double. El atributo cumplimientoUniforme se utiliza para representar el porcentaje de cumplimiento del uniforme relacionado con la calificación.
+    private double calificacion;// Esta línea declara un atributo privado llamado calificacion que es de tipo double. El atributo calificacion se utiliza para representar la calificación numérica asociada a la materia.
+
+    public Calificacion(String materia, double asistencia, double cumplimientoUniforme, double calificacion) {//Esta línea define un constructor público para la clase Calificacion. El constructor toma cuatro argumentos: materia, asistencia, cumplimientoUniforme y calificacion. Cuando se crea una nueva instancia de Calificacion, este constructor se utiliza para inicializar los atributos de la instancia con los valores proporcionados.
+        this.materia = materia;//Dentro del constructor, esta línea asigna el valor del parámetro materia al atributo materia de la instancia actual de la clase. El uso de this se refiere a la instancia actual.
+        this.asistencia = asistencia;//Similar al caso anterior, esta línea asigna el valor del parámetro asistencia al atributo asistencia de la instancia actual.
+        this.cumplimientoUniforme = cumplimientoUniforme;//Esta línea asigna el valor del parámetro cumplimientoUniforme al atributo cumplimientoUniforme de la instancia actual.
+        this.calificacion = calificacion;//Esta línea asigna el valor del parámetro calificacion al atributo calificacion de la instancia actual
+    }
+
+    public String getMateria() {//Esta línea define un método público llamado getMateria(). Este método permite obtener la materia relacionada con la calificación.
+        return materia;//Dentro del método getMateria(), esta línea devuelve el valor del atributo materia de la instancia actual como resultado.
+    }
+
+    public double getAsistencia() {//Similar al caso anterior, esta línea define un método público llamado getAsistencia() que permite obtener el porcentaje de asistencia relacionado con la calificación.
+        return asistencia;//Dentro del método getAsistencia(), esta línea devuelve el valor del atributo asistencia de la instancia actual como resultado.
+    }
+
+    public double getCumplimientoUniforme() {//Esta línea define un método público llamado getCumplimientoUniforme() que permite obtener el porcentaje de cumplimiento del uniforme relacionado con la calificación.
+        return cumplimientoUniforme;//Dentro del método getCumplimientoUniforme(), esta línea devuelve el valor del atributo cumplimientoUniforme de la instancia actual como resultado
+    }
+
+    public double getCalificacion() {//Similar al caso anterior, esta línea define un método público llamado getCalificacion() que permite obtener la calificación numérica asociada a la materia.
+        return calificacion;//Dentro del método getCalificacion(), esta línea devuelve el valor del atributo calificacion de la instancia actual como resultado.
+    }
+}
