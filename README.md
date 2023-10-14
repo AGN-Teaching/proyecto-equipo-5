@@ -68,3 +68,10 @@ El método público getNombre() se representa también con el símbolo +, indica
 
 # Conclusiones 
 
+
+Para realizar el proyecto tuvimos que ir desglosando cada atributo en su clase correspondiente, crear sus atributos e ir conectado entre clases. Fue un proyecto pesado en el cual tuvimos que trabajar mucho pero el uso de los diagramas UML fueron de gran ayuda. Los diagramas ayudaron para darnos cuenta que no todos los atributos eran públicos, unos atributos los pusimos privados (como es la clase maestro).
+
+                                                                                                                                                                          Karla Denisse Cruz Luna
+                                                                                                                                                                          
+                                                                                                                                                                          
+                                                                                                                                                                          
