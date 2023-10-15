@@ -74,4 +74,7 @@ Para realizar el proyecto tuvimos que ir desglosando cada atributo en su clase c
                                                                                     Karla Denisse Cruz Luna
                                                                                                                                                                           
                                                                                                                                                                           
-                                                                                                                                                                          
+  Para este proyecto se pudieron ocupar los conceptos vistos en la uea en los cuales planteamos las 5 clases en las cuales pudimos ver los atributos y métodos de cada una con las especificaciones dada en el análisis del problema. A su vez lo diseñamos primero a  través de los diagramas uml y diseñando cada uno para lograr la resolución de ellos. 
+                                                                                      Sánchez Almaraz Jorge Alberto
+
+                                                                                                                                                                        
