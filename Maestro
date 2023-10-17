@@ -1,0 +1,39 @@
+import java.util.ArrayList;//Estas líneas de código importan las clases ArrayList y List del paquete java.util. Estas clases son necesarias para trabajar con listas de objetos en Java.
+import java.util.List;
+
+public class Maestro {//Esta línea declara una clase pública llamada Maestro. La palabra clave public significa que esta clase es accesible desde cualquier otro lugar en el programa.
+    private String nombre;//Esta línea declara un atributo privado llamado nombre que pertenece a la clase Maestro. El atributo nombre se utiliza para almacenar el nombre del maestro.
+    private List<Sede> sedes;//Esta línea declara un atributo privado llamado sedes que es de tipo List<Sede>. El atributo sedes se utiliza para representar las sedes en las que el maestro da clases. El uso de List<Sede> indica que esta variable almacena una lista de objetos de tipo Sede.
+    private List<Character> gruposAsignados;//Similar al caso anterior, esta línea declara un atributo privado llamado gruposAsignados que es de tipo List<Character>. Este atributo se utiliza para representar los grupos a los que el maestro está asignado.
+    private String asignatura;//Esta línea declara un atributo privado llamado asignatura que es de tipo String. El atributo asignatura se utiliza para representar la materia que imparte el maestro.
+    private List<Alumno> alumnosPorGrupo;// Similar al caso de sedes, esta línea declara un atributo privado llamado alumnosPorGrupo que es de tipo List<Alumno>. Este atributo se utiliza para representar la lista de alumnos que el maestro tiene a cargo.
+
+    public Maestro//Esta línea define un constructor público para la clase Maestro. El constructor toma cinco argumentos: nombre, sedes, gruposAsignados, asignatura y alumnosPorGrupo. Cuando se crea una nueva instancia de Maestro, este constructor se utiliza para inicializar los atributos de la instancia con los valores proporcionados.
+    (String nombre, List<Sede> sedes, List<Character> gruposAsignados, String asignatura, List<Alumno> alumnosPorGrupo) {
+        this.nombre = nombre;//Dentro del constructor, esta línea asigna el valor del parámetro nombre al atributo nombre de la instancia actual de la clase. El uso de this se refiere a la instancia actual.
+        this.sedes = sedes;// Similar al caso anterior, esta línea asigna el valor del parámetro sedes al atributo sedes de la instancia actual.
+        this.gruposAsignados = gruposAsignados;//Esta línea asigna el valor del parámetro gruposAsignados al atributo gruposAsignados de la instancia actual.
+        this.asignatura = asignatura;//Esta línea asigna el valor del parámetro asignatura al atributo asignatura de la instancia actual.
+        this.alumnosPorGrupo = alumnosPorGrupo;//Esta línea asigna el valor del parámetro alumnosPorGrupo al atributo alumnosPorGrupo de la instancia actual.
+    }
+
+    public String getNombre() {//Esta línea define un método público llamado getNombre(). Este método permite obtener el nombre del maestro.
+        return nombre;// Dentro del método getNombre(), esta línea devuelve el valor del atributo nombre de la instancia actual como resultado.
+    }
+
+    public List<Sede> getSedes() {//Similar al caso anterior, esta línea define un método público llamado getSedes() que permite obtener la lista de sedes en las que el maestro da clases.
+        return sedes;//Dentro del método getSedes(), esta línea devuelve el valor del atributo sedes de la instancia actual como resultado. El tipo de retorno es una lista de objetos Sede.
+    }
+
+    public List<Character> getGruposAsignados() {//Esta línea define un método público llamado getGruposAsignados() que permite obtener la lista de grupos a los que el maestro está asignado.
+        return gruposAsignados;//Dentro del método getGruposAsignados(), esta línea devuelve el valor del atributo gruposAsignados de la instancia actual como resultado. El tipo de retorno es una lista de caracteres.
+    }
+
+    public String getAsignatura() {//Esta línea define un método público llamado getAsignatura() que permite obtener la asignatura que el maestro imparte.
+        return asignatura;//Dentro del método getAsignatura(), esta línea devuelve el valor del atributo asignatura de la instancia actual como resultado.
+    }
+
+    public List<Alumno> getAlumnosPorGrupo() {//Similar al caso anterior, esta línea define un método público llamado getAlumnosPorGrupo() que permite obtener la lista de alumnos que el maestro tiene a cargo.
+        return alumnosPorGrupo;//Dentro del método getAlumnosPorGrupo(), esta línea devuelve el valor del atributo alumnosPorGrupo de la instancia actual como resultado. El tipo de retorno es una lista de objetos Alumno.
+    }
+}
